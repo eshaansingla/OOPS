@@ -29,6 +29,10 @@ class Gta{
         cout<<"Rating: "<<this->rating<<endl<<endl;
         cout<<"Name: "<<name<<endl<<"Age: " <<age<<endl<<endl;
     }
+    string exp(){
+        if(this->age > 40) return "old";
+        else return "young";
+    }
 };
 int main(){
     Gta tommy("Tommy Vercetti","GTA Vice City",30,7.5);
@@ -38,14 +42,18 @@ int main(){
     micheal.age=49;
     micheal.game="GTA V";
     micheal.rating=9.8;
-   /* tommy.print();
+   tommy.print();
     cj.print();
     micheal.print();
     tommy.print1(23,"The text should be changed");
     cj.print1(36,"The text should be changed !!");
-    micheal.print1(69,"The text should be changed !");*/
+    micheal.print1(69,"The text should be changed !");
     tommy.print2(23,"The text should not be changed");
     cj.print2(36,"The text should be not changed !!");
     micheal.print2(69,"The text should not be changed !");
+    cout<<"CJ: "<<cj.exp()<<endl;
+    cout<<"Micheal: "<<micheal.exp()<<endl;
+    cout<<"Tommy:"<<tommy.exp()<<endl; 
+
 
 }
