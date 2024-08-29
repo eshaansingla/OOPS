@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "*.ejs": "html",
-        "iostream": "cpp"
-    }
+        "iostream": "cpp",
+        "string": "cpp",
+        "typeinfo": "cpp",
+        "ostream": "cpp",
+        "*.tcc": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
