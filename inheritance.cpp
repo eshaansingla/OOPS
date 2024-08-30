@@ -47,5 +47,5 @@ int main(){
     cout << "Speed: " << b1.speed << endl;
     cout << "Bootspace: " << b1.bootspace << endl;
     cout << "Gears: " << b1.gears << endl;
-
+    
 }

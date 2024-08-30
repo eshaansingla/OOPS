@@ -25,19 +25,23 @@ class Gta{
 };
 int main(){
     Gta tommy("Tommy Vercetti","GTA Vice City",30,7.5);
+
     Gta cj("CJ","GTA San Andreas",27,9.2);
+
     Gta micheal;
     micheal.name="Micheal";
     micheal.age=49;
     micheal.game="GTA V";
     micheal.rating=9.8;
+
     Gta *frankmentor=&micheal;
     cout<<(*frankmentor).game<<endl;
     frankmentor->age=24;
     cout<<micheal.age<<endl;
-    micheal.changes(&tommy);
-    tommy.print();
 
+    micheal.changes(&tommy);
+    
+    tommy.print();
     cj.print();
     micheal.print();
 }

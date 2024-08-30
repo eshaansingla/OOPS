@@ -46,7 +46,7 @@ int main(){
     cap.print();
 
     Avengers *spidey= new Avengers("Spider Man","Peter Parker",1,75);
-    spidey->print(); //Dyanamic Allocation*/
+    spidey->print(); //Dyanamic Allocation
 
     cap.swap(cap,ironman);
     cap.print();
