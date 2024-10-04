@@ -2,9 +2,9 @@
 using namespace std;
 class Team;
 class Player{
-    public:
-        string name;
+    string name;
         int score;
+    public:
         void setplayer(string name,int score){
             (*this).name=name;
             this->score=score;
@@ -12,15 +12,16 @@ class Player{
         void display(){
             cout<<"Name: "<<this->name<<endl<<"Score: "<<this->score<<endl;
     }
+    friend class Team;
 };
 class Team{
     public:
         int sum=0;
-        Player players[3];
+        Player players[5];
         string names;
         int scores;
         void setteam(){
-            for(int i=0;i<3;i++){
+            for(int i=0;i<5;i++){
             cout<<"Enter name:";
             cin>>names;
             cout<<"Enter score:";
@@ -29,13 +30,13 @@ class Team{
             }
         }
         void display(){
-            for(int i=0;i<3;i++){
+            for(int i=0;i<5;i++){
                 players[i].display();
             }
             cout<<endl<<endl;
         }
         void addscore(){
-            for(int i=0;i<3;i++){
+            for(int i=0;i<5;i++){
                 (this->sum)+=players[i].score;
             }
         }
