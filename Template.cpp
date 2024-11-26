@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-template<class T=string,class S=float>
+template<class T,class S>
 class Something{
 T data;
 S data1;
@@ -21,7 +21,9 @@ y=temp;
 return;
 }
 int main(){
-Something<>s("Eshaan Singla",9.26);
+string name="Eshaan";
+float numb=9.26;
+Something<string,float> s(name,numb);
 s.print();
 auto a=90.44555;
 auto b=99.7775;
