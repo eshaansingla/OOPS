@@ -1,19 +1,10 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Player{
-    public:
-    int score;
-    string name;
-    Player(){
-
-    }
-    Player(int score,string name){
-        this->name=name;
-        this->score=score;
-    }
-
-};
-int main(){
-Player*newplayer=new Player(10000,"Rohit");
-cout<<newplayer->name<<" "<<newplayer->score<<endl;
+template<class T>
+T Maz(T x,T y){ return (x>y)?x:y;}
+int main() {
+    cout<<Maz(2,69)<<endl;
+    cout<<Maz('a','z')<<endl;
+    cout<<Maz(0.420,0.32)<<endl;
+    return 0;
 }
